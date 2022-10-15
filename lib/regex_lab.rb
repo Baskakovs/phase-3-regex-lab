@@ -1,6 +1,13 @@
+require "pry"
 def starts_with_a_vowel?(word)
-
+    word_split = word.split("")
+    return true if word_split[0].match(/[aeuioyw]/) != nil
+    return false if word_split[0].match(/[aeuioyw]/) == nil
+    return true if word_split[0].match(/[aeuioyw]/) != nil
+    
 end
+
+starts_with_a_vowel?("apple")
 
 def words_starting_with_un_and_ending_with_ing(text)
 
